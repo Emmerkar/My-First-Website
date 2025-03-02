@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Disclaimer</h1>
+    <p><strong>AI-Generated Content</strong></p>
+    <p>This website, including its code and personality tests, has been primarily generated using Grok 3 AI. The content is provided on an "as-is" basis, with no guarantees of accuracy, completeness, or reliability.</p>
+
+    <p><strong>No Copyright Claims</strong></p>
+    <p>The owner of this website makes no copyright claims over the AI-generated content. If you believe any content infringes on your rights, please contact us for resolution.</p>
+
+    <p><strong>Use at Your Own Risk</strong></p>
+    <p>The personality tests and other content provided on this website are for entertainment and informational purposes only. They do not constitute professional advice (legal, psychological, medical, financial, or otherwise). The website owner is not responsible for any actions taken based on the test results.</p>
+
+    <p><strong>No Data Collection</strong></p>
+    <p>This website does not intentionally collect, store, or process personal data. However, third-party services (such as hosting providers or analytics tools) may have their own data collection policies.</p>
+
+    <p><strong>Third-Party Content & Links</strong></p>
+    <p>This website may include links to third-party websites. We do not endorse or take responsibility for the content, privacy policies, or practices of any external sites.</p>
+
+    <p><strong>Changes to This Disclaimer</strong></p>
+    <p>This disclaimer may be updated over time. By using this website, you acknowledge that you have read and understood this disclaimer and agree to its terms.</p>
+
+    <p style="text-align: center;"><a href="index.html">Back to Home</a></p>
+</div>
+
+</body>
+</html>
