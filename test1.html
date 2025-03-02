@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Roman Emperor Are You? - Personality Tests</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Personality Tests</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="test1.html">Which Roman Emperor Are You?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Which Roman Emperor Are You?</h2>
+        <form id="test-form">
+            <div class="question">
+                <p>1. How do you handle power?</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> With wisdom and justice</label><br>
+                    <label><input type="radio" name="q1" value="b"> With strength and authority</label><br>
+                    <label><input type="radio" name="q1" value="c"> With cunning and strategy</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. What is your leadership style?</p>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="a"> Democratic</label><br>
+                    <label><input type="radio" name="q2" value="b"> Authoritarian</label><br>
+                    <label><input type="radio" name="q2" value="c"> Laissez-faire</label>
+                </div>
+            </div>
+            <!-- Add more questions here by duplicating the question div -->
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results" style="display: none;"></div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Personality Tests. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
