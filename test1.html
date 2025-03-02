@@ -21,9 +21,10 @@
     </header>
     <main>
         <h2>Are You a Tyrant?</h2>
-        <p>Step into the world of a 6th-century BC Greek polis. Answer these questions to discover how you would rise to
-            power and rule.</p>
-        <form id="test-form">
+        <p>Answer the following questions to discover your leadership style in an ancient Greek city-state around 600
+            BC.</p>
+        <!-- First Set: Ruler Type Questions -->
+        <form id="form1">
             <div class="question">
                 <p>1. How do you gain support for your rule?</p>
                 <div class="options">
@@ -70,6 +71,156 @@
                     <label><input type="radio" name="q5" value="oligarch"> By maintaining a system of patronage and
                         favors.</label><br>
                     <label><input type="radio" name="q5" value="tyrant"> By instilling fear and dependence.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>6. What is your primary motivation for seeking power?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="democrat"> To serve the people and improve their
+                        lives.</label><br>
+                    <label><input type="radio" name="q6" value="oligarch"> To maintain order and stability.</label><br>
+                    <label><input type="radio" name="q6" value="tyrant"> To achieve personal glory and legacy.</label>
+                </div>
+            </div>
+            <button type="submit">Next</button>
+        </form>
+        <!-- Second Set: Democrat Morality Questions -->
+        <form id="democrat-form2" style="display: none;">
+            <h3>Democrat Morality Questions</h3>
+            <div class="question">
+                <p>7. Do you follow through on your promises to the people?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="positive"> Always</label><br>
+                    <label><input type="radio" name="q7" value="negative"> Sometimes</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. Do you prioritize public works that benefit the masses?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q8" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. Do you resist corruption and bribery?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q9" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. Do you empower local communities to make decisions?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q10" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>11. Do you promote education and civic participation?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q11" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>12. Do you use your position to uplift the disadvantaged?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q12" value="negative"> No</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Second Set: Oligarch Morality Questions -->
+        <form id="oligarch-form2" style="display: none;">
+            <h3>Oligarch Morality Questions</h3>
+            <div class="question">
+                <p>7. Do you rule with fairness and justice for all?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q7" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. Do you use your wealth to fund public projects?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q8" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. Do you listen to the concerns of the common people?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q9" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. Do you appoint competent and honest officials?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q10" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>11. Do you maintain traditions that benefit society?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q11" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>12. Do you avoid nepotism and favoritism?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q12" value="negative"> No</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <!-- Second Set: Tyrant Morality Questions -->
+        <form id="tyrant-form2" style="display: none;">
+            <h3>Tyrant Morality Questions</h3>
+            <div class="question">
+                <p>7. Do you use your power to improve the lives of the poor?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q7" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. Do you allow some form of citizen input in your rule?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q8" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. Do you punish corruption among your officials?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q9" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. Do you invest in infrastructure and public welfare?</p>
+                <div class="options">
+                    <label><input type="radio" name="q10" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q10" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>11. Do you show mercy to your enemies when possible?</p>
+                <div class="options">
+                    <label><input type="radio" name="q11" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q11" value="negative"> No</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>12. Do you seek to leave a legacy of progress and prosperity?</p>
+                <div class="options">
+                    <label><input type="radio" name="q12" value="positive"> Yes</label><br>
+                    <label><input type="radio" name="q12" value="negative"> No</label>
                 </div>
             </div>
             <button type="submit">Submit</button>
