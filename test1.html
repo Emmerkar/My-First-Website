@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Which Roman Emperor Are You? - Personality Tests</title>
+    <title>Are You a Tyrant? - Personality Tests</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,36 +15,69 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="test1.html">Which Roman Emperor Are You?</a></li>
+                <li><a href="test1.html">Are You a Tyrant?</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Which Roman Emperor Are You?</h2>
+        <h2>Are You a Tyrant?</h2>
+        <p>Step into the world of a 6th-century BC Greek polis. Answer these questions to discover how you would rise to
+            power and rule.</p>
         <form id="test-form">
             <div class="question">
-                <p>1. How do you handle power?</p>
+                <p>1. How do you gain support for your rule?</p>
                 <div class="options">
-                    <label><input type="radio" name="q1" value="a"> With wisdom and justice</label><br>
-                    <label><input type="radio" name="q1" value="b"> With strength and authority</label><br>
-                    <label><input type="radio" name="q1" value="c"> With cunning and strategy</label>
+                    <label><input type="radio" name="q1" value="democrat"> By promising reforms and benefits to the
+                        common people.</label><br>
+                    <label><input type="radio" name="q1" value="oligarch"> By securing the backing of the wealthy and
+                        powerful.</label><br>
+                    <label><input type="radio" name="q1" value="tyrant"> By exploiting divisions and unrest among the
+                        populace.</label>
                 </div>
             </div>
             <div class="question">
-                <p>2. What is your leadership style?</p>
+                <p>2. When making decisions, whose interests do you prioritize?</p>
                 <div class="options">
-                    <label><input type="radio" name="q2" value="a"> Democratic</label><br>
-                    <label><input type="radio" name="q2" value="b"> Authoritarian</label><br>
-                    <label><input type="radio" name="q2" value="c"> Laissez-faire</label>
+                    <label><input type="radio" name="q2" value="democrat"> The common citizens.</label><br>
+                    <label><input type="radio" name="q2" value="oligarch"> The aristocratic families.</label><br>
+                    <label><input type="radio" name="q2" value="tyrant"> Your own power and legacy.</label>
                 </div>
             </div>
-            <!-- Add more questions here by duplicating the question div -->
+            <div class="question">
+                <p>3. How do you handle opposition?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="democrat"> Through dialogue and compromise.</label><br>
+                    <label><input type="radio" name="q3" value="oligarch"> By enforcing strict laws and
+                        punishments.</label><br>
+                    <label><input type="radio" name="q3" value="tyrant"> By eliminating rivals discreetly.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. What is your view on laws and constitutions?</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="democrat"> They should be created by and for the
+                        people.</label><br>
+                    <label><input type="radio" name="q4" value="oligarch"> They should preserve the traditional
+                        order.</label><br>
+                    <label><input type="radio" name="q4" value="tyrant"> They are tools to legitimize your rule.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. How do you ensure loyalty among your supporters?</p>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="democrat"> By delivering on promises and improving their
+                        lives.</label><br>
+                    <label><input type="radio" name="q5" value="oligarch"> By maintaining a system of patronage and
+                        favors.</label><br>
+                    <label><input type="radio" name="q5" value="tyrant"> By instilling fear and dependence.</label>
+                </div>
+            </div>
             <button type="submit">Submit</button>
         </form>
         <div id="results" style="display: none;"></div>
     </main>
     <footer>
-        <p>&copy; 2023 Personality Tests. All rights reserved.</p>
+        <p>© 2023 Personality Tests. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
