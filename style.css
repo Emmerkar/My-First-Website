@@ -34,9 +34,10 @@ main {
     padding: 2em;
 }
 
-.welcome {
+.welcome,
+h2,
+h3 {
     text-align: center;
-    margin-bottom: 2em;
 }
 
 .tests {
@@ -70,7 +71,6 @@ main {
 
 .question {
     margin-bottom: 2em;
-    /* Increased spacing for better readability */
 }
 
 .options {
@@ -91,7 +91,6 @@ footer {
     padding: 1em;
     text-align: center;
     margin-top: 2em;
-    /* Ensures footer doesn’t overlap submit button */
 }
 
 @media (max-width: 600px) {
