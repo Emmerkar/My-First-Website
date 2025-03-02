@@ -1,9 +1,12 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f5f6ce;
+    /* Light yellow like old paper */
 }
 
 h1 {
-    color: darkred;
+    color: #d62728;
+    /* Soviet red */
     text-align: center;
 }
 
