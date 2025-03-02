@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkred;
+    text-align: center;
+}
+
+#toggleButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggleButton:hover {
+    background-color: red;
+}
+
+#counter {
+    text-align: center;
+    color: darkblue;
+    font-size: 18px;
+}
+
+#userInput {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 200px;
+    border: 2px solid darkred;
+    border-radius: 4px;
+}
+
+nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
+nav a {
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
