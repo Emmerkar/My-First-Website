@@ -20,3 +20,4 @@ This is a simple personality test website. Answer a series of questions to disco
 
 ## Contact
 If you have questions or suggestions, feel free to open an issue on this GitHub repo.
+You may contact me at AvgRomeEnjoyer@gmail.com for any inquiries
