@@ -1,7 +1,7 @@
 Personality Tests
 
 ## Overview
-This is a simple personality test website designed to explore your leadership style in the context of a 6th-century BC Greek polis. Answer a series of questions to discover whether you’d be a benevolent democrat, a cunning oligarch, or a ruthless tyrant. The site uses HTML, CSS, and vanilla JavaScript, hosted on GitHub Pages.
+This is a simple personality test website. Answer a series of questions to discover more about yourself and where you stand. The site uses HTML, CSS, and vanilla JavaScript, hosted on GitHub Pages.
 
 ## How to Use
 1. Visit the live site at `https://emmerkar.github.io/Who-Are-You-Really/`.
