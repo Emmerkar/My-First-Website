@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Type of Commander Are You?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h2>Forge Your Legacy in Battle</h2>
+        <p>Answer these questions to discover which ancient commander you resemble.</p>
+
+        <!-- Stage 1: Strategic Decisions -->
+        <form id="commander-stage1">
+            <div class="question">
+                <h3>1. When planning a campaign, what is your primary objective?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="alexander" required> To conquer new territories and
+                        expand your empire.</label>
+                    <label><input type="radio" name="q1" value="leonidas"> To secure your borders and protect your
+                        people.</label>
+                    <label><input type="radio" name="q1" value="caesar"> To outmaneuver the enemy with superior
+                        strategy.</label>
+                    <label><input type="radio" name="q1" value="suntzu"> To win through deception and psychological
+                        warfare.</label>
+                    <label><input type="radio" name="q1" value="hannibal"> To adapt to the enemy's weaknesses and
+                        exploit them.</label>
+                    <label><input type="radio" name="q1" value="scipio"> To learn from the enemy and turn their
+                        strengths against them.</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>2. How do you approach a superior enemy force?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q2" value="alexander" required> Lead a bold frontal assault to
+                        break their spirit.</label>
+                    <label><input type="radio" name="q2" value="leonidas"> Hold a defensive position and make them pay
+                        for every inch.</label>
+                    <label><input type="radio" name="q2" value="caesar"> Use diplomacy and alliances to even the
+                        odds.</label>
+                    <label><input type="radio" name="q2" value="suntzu"> Avoid direct confrontation and weaken them over
+                        time.</label>
+                    <label><input type="radio" name="q2" value="hannibal"> Strike at their supply lines and
+                        communications.</label>
+                    <label><input type="radio" name="q2" value="scipio"> Study their tactics and counter with
+                        disciplined formations.</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>3. What is your view on alliances?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="alexander" required> They are tools to be used and
+                        discarded as needed.</label>
+                    <label><input type="radio" name="q3" value="leonidas"> They are sacred bonds to be honored at all
+                        costs.</label>
+                    <label><input type="radio" name="q3" value="caesar"> They are essential for achieving greater
+                        goals.</label>
+                    <label><input type="radio" name="q3" value="suntzu"> They are liabilities that can be exploited by
+                        the enemy.</label>
+                    <label><input type="radio" name="q3" value="hannibal"> They are opportunities for betrayal and must
+                        be managed carefully.</label>
+                    <label><input type="radio" name="q3" value="scipio"> They are a way to learn from others and
+                        strengthen your position.</label>
+                </div>
+            </div>
+            <button type="submit">Next</button>
+        </form>
+
+        <!-- Stage 2: Leadership and Morale -->
+        <form id="commander-stage2" style="display: none;">
+            <div class="question">
+                <h3>4. How do you inspire your troops before a battle?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="alexander" required> With a rousing speech about glory
+                        and immortality.</label>
+                    <label><input type="radio" name="q4" value="leonidas"> By standing with them in the front lines,
+                        sharing their fate.</label>
+                    <label><input type="radio" name="q4" value="caesar"> By promising rewards and spoils of war.</label>
+                    <label><input type="radio" name="q4" value="suntzu"> By teaching them the art of war and the
+                        importance of discipline.</label>
+                    <label><input type="radio" name="q4" value="hannibal"> By demonstrating your own cunning and
+                        brilliance.</label>
+                    <label><input type="radio" name="q4" value="scipio"> By showing them the value of unity and
+                        teamwork.</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>5. What is your response to dissent among your ranks?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q5" value="alexander" required> Crush it swiftly to maintain
+                        authority.</label>
+                    <label><input type="radio" name="q5" value="leonidas"> Listen to their concerns and address them
+                        honorably.</label>
+                    <label><input type="radio" name="q5" value="caesar"> Use it as an opportunity to strengthen loyalty
+                        through persuasion.</label>
+                    <label><input type="radio" name="q5" value="suntzu"> Ignore it, as the wise leader knows when to
+                        act.</label>
+                    <label><input type="radio" name="q5" value="hannibal"> Turn the dissenters against each other to
+                        maintain control.</label>
+                    <label><input type="radio" name="q5" value="scipio"> Educate them on the consequences of
+                        disunity.</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>6. How do you handle victory?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="alexander" required> Celebrate lavishly and plan the
+                        next conquest.</label>
+                    <label><input type="radio" name="q6" value="leonidas"> Honor the fallen and prepare for the next
+                        threat.</label>
+                    <label><input type="radio" name="q6" value="caesar"> Consolidate power and reward loyal
+                        followers.</label>
+                    <label><input type="radio" name="q6" value="suntzu"> Reflect on the lessons learned and document
+                        them.</label>
+                    <label><input type="radio" name="q6" value="hannibal"> Use it to further your strategic goals and
+                        unsettle the enemy.</label>
+                    <label><input type="radio" name="q6" value="scipio"> Share the glory with your troops and
+                        allies.</label>
+                </div>
+            </div>
+            <button type="submit">Next</button>
+        </form>
+
+        <!-- Stage 3: Tactics and Execution -->
+        <form id="commander-stage3" style="display: none;">
+            <div class="question">
+                <h3>7. In battle, what is your preferred tactic?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="alexander" required> A swift, decisive charge to
+                        overwhelm the enemy.</label>
+                    <label><input type="radio" name="q7" value="leonidas"> A staunch defense that makes the enemy bleed
+                        for every step.</label>
+                    <label><input type="radio" name="q7" value="caesar"> A flexible formation that can adapt to the
+                        enemy's moves.</label>
+                    <label><input type="radio" name="q7" value="suntzu"> Deception and misdirection to confuse the
+                        enemy.</label>
+                    <label><input type="radio" name="q7" value="hannibal"> Ambushes and surprise attacks to catch the
+                        enemy off guard.</label>
+                    <label><input type="radio" name="q7" value="scipio"> Learning the enemy's tactics and countering
+                        them effectively.</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>8. How do you deal with a prolonged siege?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="alexander" required> Lead a daring assault to break the
+                        siege quickly.</label>
+                    <label><input type="radio" name="q8" value="leonidas"> Endure and wait for the enemy to exhaust
+                        themselves.</label>
+                    <label><input type="radio" name="q8" value="caesar"> Negotiate terms or find a way to turn the
+                        tables.</label>
+                    <label><input type="radio" name="q8" value="suntzu"> Use spies and sabotage to weaken the enemy's
+                        resolve.</label>
+                    <label><input type="radio" name="q8" value="hannibal"> Launch a surprise sortie to disrupt the
+                        enemy's supply lines.</label>
+                    <label><input type="radio" name="q8" value="scipio"> Study the enemy's weaknesses and exploit them
+                        methodically.</label>
+                </div>
+            </div>
+            <div class="question">
+                <h3>9. What is your philosophy on warfare?</h3>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="alexander" required> War is the ultimate test of will
+                        and destiny.</label>
+                    <label><input type="radio" name="q9" value="leonidas"> War is a necessary evil to protect what
+                        matters.</label>
+                    <label><input type="radio" name="q9" value="caesar"> War is a means to achieve political
+                        ends.</label>
+                    <label><input type="radio" name="q9" value="suntzu"> War is best avoided, but if fought, won
+                        decisively.</label>
+                    <label><input type="radio" name="q9" value="hannibal"> War is an art that requires creativity and
+                        innovation.</label>
+                    <label><input type="radio" name="q9" value="scipio"> War is a science that demands study and
+                        adaptation.</label>
+                </div>
+            </div>
+            <button type="submit">Reveal Your Commander</button>
+        </form>
+
+        <!-- Results -->
+        <div id="commander-results" style="display: none;"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

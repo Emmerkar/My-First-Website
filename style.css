@@ -1,203 +1,84 @@
-/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #1a1a1a;
-    /* Dark gray background */
-    color: #e0e0e0;
-    /* Light gray text */
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
-/* Header and Footer */
-header,
-footer {
-    background-color: #0d0d0d;
-    /* Darker gray */
-    padding: 1rem;
+header {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-header h1 {
-    font-family: 'Cinzel', serif;
-    margin: 0;
-    color: #b8860b;
-    /* Muted gold for Greek theme */
+h1,
+h2,
+h3 {
+    color: #333;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #b8860b;
-    /* Gold on hover */
-}
-
-/* Main Content */
 main {
     max-width: 800px;
-    margin: 2rem auto 4rem auto;
-    /* Added bottom margin to prevent footer overlap */
-    padding: 0 1rem;
+    margin: 0 auto;
 }
 
-h2 {
-    font-family: 'Cinzel', serif;
-    color: #b8860b;
-    /* Gold for headers */
-    text-align: center;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-h3 {
-    font-family: 'Cinzel', serif;
-    color: #b8860b;
+li {
+    margin: 10px 0;
 }
 
-/* Test Page Forms */
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 form {
-    background: #2f2f2f;
-    /* Medium gray for forms */
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1rem;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .question {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 .options label {
     display: block;
-    margin: 0.5rem 0;
+    margin: 10px 0;
 }
 
-/* Buttons */
 button {
-    background-color: #2c3e50;
-    /* Deep blue */
-    color: #e0e0e0;
-    padding: 0.5rem 1rem;
-    border: 2px solid #b8860b;
-    /* Gold border for Greek theme */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-button:hover {
-    background-color: #b8860b;
-    /* Gold on hover */
-    color: #1a1a1a;
-    /* Dark text for contrast */
-}
-
-/* Results Display */
-#results {
-    text-align: center;
-    padding: 1rem;
-    border: 1px solid #b8860b;
-    /* Gold border for Greek tablet effect */
-    background-color: #2f2f2f;
-    border-radius: 5px;
-}
-
-#results h2 {
-    font-family: 'Cinzel', serif;
-    color: #b8860b;
-    /* Gold title */
-    font-size: 28px;
-    margin-bottom: 1rem;
-}
-
-#results p {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 0.5rem 0;
-    }
-}
-
-/* Existing styles remain unchanged above this point... */
-
-/* Forms and Questions */
-form {
-    background: #333;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1rem;
-}
-
-.question {
-    margin-bottom: 1.5rem;
-    /* Increased spacing between questions */
-}
-
-.options {
-    margin-left: 1rem;
-    padding-left: 20px;
-    /* Indent options for better readability */
-}
-
-.options label {
-    display: block;
-    margin-bottom: 10px;
-    /* Space between options */
-    color: #e0e0e0;
-}
-
-/* Radio Buttons */
-input[type="radio"] {
-    margin-right: 10px;
-}
-
-/* Buttons */
-button {
-    background-color: #2c3e50;
-    color: white;
-    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: #fff;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #34495e;
+    background-color: #0056b3;
 }
 
-/* Results */
-#results {
-    text-align: center;
-    margin-top: 2rem;
+#tyrant-results,
+#commander-results {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#results h2 {
-    font-family: 'Cinzel', serif;
-    color: #e74c3c;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#results p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+blockquote {
+    font-style: italic;
+    color: #666;
+    margin: 20px 0;
 }
