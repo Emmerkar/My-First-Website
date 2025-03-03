@@ -93,22 +93,10 @@ footer {
     margin-top: 2em;
 }
 
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin-bottom: 0.5em;
-    }
-
-
-}
-
-/* Existing styles assumed... */
-
 #results {
     text-align: center;
     margin-top: 2em;
-    color: #fff;
-    /* Assuming dark theme text color */
+    color: #eee;
 }
 
 .result-title {
@@ -124,4 +112,11 @@ footer {
 #results p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5em;
+    }
 }

@@ -1,8 +1,56 @@
+let politicalCategory = '';
+let lawfulness = '';
+
+document.getElementById('form1').addEventListener('submit', function (event) {
+    event.preventDefault();
+    const answers = { oligarch: 0, democrat: 0, tyrant: 0 };
+    for (let i = 1; i <= 3; i++) {
+        const selected = document.querySelector(`input[name="q${i}"]:checked`);
+        if (selected) answers[selected.value]++;
+    }
+    politicalCategory = answers.oligarch >= 2 ? 'oligarch' :
+        answers.democrat >= 2 ? 'democrat' :
+            answers.tyrant >= 2 ? 'tyrant' : 'mixed';
+    if (politicalCategory !== 'mixed') {
+        document.getElementById('form1').style.display = 'none';
+        document.getElementById(`${politicalCategory}-lawfulness`).style.display = 'block';
+    } else {
+        document.getElementById('results').innerHTML = '<p>Your political stance is too varied to define clearly.</p>';
+        document.getElementById('results').style.display = 'block';
+    }
+});
+
+document.querySelectorAll('[id$="-lawfulness"]').forEach(form => {
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const answers = { lawful: 0, neutral: 0, chaotic: 0 };
+        for (let i = 4; i <= 6; i++) {
+            const selected = event.target.querySelector(`input[name="q${i}"]:checked`);
+            if (selected) answers[selected.value]++;
+        }
+        lawfulness = answers.lawful >= 2 ? 'lawful' :
+            answers.neutral >= 2 ? 'neutral' :
+                answers.chaotic >= 2 ? 'chaotic' : 'mixed';
+        if (lawfulness !== 'mixed') {
+            event.target.style.display = 'none';
+            const moralityFormId = `${politicalCategory}-${lawfulness}-morality`;
+            const moralityForm = document.getElementById(moralityFormId);
+            if (moralityForm) {
+                moralityForm.style.display = 'block';
+            } else {
+                document.getElementById('results').innerHTML = '<p>Error: Morality questions not found for this path.</p>';
+                document.getElementById('results').style.display = 'block';
+            }
+        } else {
+            document.getElementById('results').innerHTML = '<p>Your approach to order is too mixed to categorize.</p>';
+            document.getElementById('results').style.display = 'block';
+        }
+    });
+});
+
 document.querySelectorAll('[id$="-morality"]').forEach(form => {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
-
-        // Example logic to determine morality (adjust as needed)
         const answers = { good: 0, neutral: 0, evil: 0 };
         for (let i = 7; i <= 9; i++) {
             const selected = event.target.querySelector(`input[name="q${i}"]:checked`);
@@ -11,11 +59,7 @@ document.querySelectorAll('[id$="-morality"]').forEach(form => {
         const morality = answers.good >= 2 ? 'good' :
             answers.neutral >= 2 ? 'neutral' :
                 answers.evil >= 2 ? 'evil' : 'mixed';
-
-        // Hide the form
         event.target.style.display = 'none';
-
-        // Display result if morality is clear
         if (morality !== 'mixed') {
             const key = `${politicalCategory}-${lawfulness}-${morality}`;
             const results = {
@@ -56,7 +100,6 @@ document.querySelectorAll('[id$="-morality"]').forEach(form => {
                     title: 'The Anarchic Despot',
                     description: 'You are a dark whirlwind within the demos, sowing discord to reap power from the ashes of order. Your polis trembles under your anarchic sway.'
                 },
-
                 // Oligarch Results
                 'oligarch-lawful-good': {
                     title: 'The Noble Protector',
@@ -94,7 +137,6 @@ document.querySelectorAll('[id$="-morality"]').forEach(form => {
                     title: 'The Savage Warlord',
                     description: 'You are a savage prince of the polis, tearing through the noble order to claim all for yourself. Your rule is a reign of terror.'
                 },
-
                 // Tyrant Results
                 'tyrant-lawful-good': {
                     title: 'The Just Autocrat',
@@ -133,15 +175,12 @@ document.querySelectorAll('[id$="-morality"]').forEach(form => {
                     description: 'You are a tempest of tyranny, sweeping through the polis with ferocity unbound. Your rule is a dark hymn of chaos.'
                 }
             };
-
-            // Display the result with title and description
             document.getElementById('results').innerHTML = `
-          <h2 class="result-title">${results[key].title}</h2>
-          <p>${results[key].description}</p>
-        `;
+        <h2 class="result-title">${results[key].title}</h2>
+        <p>${results[key].description}</p>
+      `;
             document.getElementById('results').style.display = 'block';
         } else {
-            // Handle mixed morality
             document.getElementById('results').innerHTML = '<p>Your moral path is too conflicted to define clearly.</p>';
             document.getElementById('results').style.display = 'block';
         }
