@@ -9,12 +9,14 @@ This is a simple personality test website designed to explore your leadership st
 
 ## Files
 - `index.html`: The homepage.
-- `test1.html`: The personality test page.
+- `AreYouATyrant.html`: The personality test page.
 - `style.css`: Styling with a dark Greek theme.
 - `script.js`: Logic for question navigation and result display.
 
 ## Notes
-- This project is released into the public domain under CC0. I waive all copyright claims—feel free to use, modify, or share it however you like!
+- This project is released into the public domain under CC0 1.0 Universal. I waive all copyright claims—feel free to use, modify, or share it however you like!
+- This content was generated with assistance from AI (Grok, created by xAI), reflecting my intent to share it freely.
+- Disclaimer: These personality tests are offered for entertainment purposes only. No warranty is made as to its accuracy or applicability. Use at your own discretion.
 
 ## Contact
 If you have questions or suggestions, feel free to open an issue on this GitHub repo.
