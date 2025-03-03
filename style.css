@@ -134,3 +134,70 @@ button:hover {
         margin: 0.5rem 0;
     }
 }
+
+/* Existing styles remain unchanged above this point... */
+
+/* Forms and Questions */
+form {
+    background: #333;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+.question {
+    margin-bottom: 1.5rem;
+    /* Increased spacing between questions */
+}
+
+.options {
+    margin-left: 1rem;
+    padding-left: 20px;
+    /* Indent options for better readability */
+}
+
+.options label {
+    display: block;
+    margin-bottom: 10px;
+    /* Space between options */
+    color: #e0e0e0;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Results */
+#results {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#results h2 {
+    font-family: 'Cinzel', serif;
+    color: #e74c3c;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#results p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
