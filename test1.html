@@ -60,7 +60,7 @@
             </div>
             <button type="submit">Next</button>
         </form>
-        <!-- Democrat Lawfulness -->
+        <!-- Democrat Lawfulness Questions -->
         <form id="democrat-lawfulness" style="display: none;">
             <h3>A Leader of the Demos</h3>
             <div class="question">
@@ -99,7 +99,7 @@
             </div>
             <button type="submit">Next</button>
         </form>
-        <!-- Oligarch Lawfulness -->
+        <!-- Oligarch Lawfulness Questions -->
         <form id="oligarch-lawfulness" style="display: none;">
             <h3>A Noble Among the Elite</h3>
             <div class="question">
@@ -137,7 +137,7 @@
             </div>
             <button type="submit">Next</button>
         </form>
-        <!-- Tyrant Lawfulness -->
+        <!-- Tyrant Lawfulness Questions -->
         <form id="tyrant-lawfulness" style="display: none;">
             <h3>A Sovereign Autocrat</h3>
             <div class="question">
@@ -175,51 +175,475 @@
             </div>
             <button type="submit">Next</button>
         </form>
-        <!-- Democrat Lawful Morality -->
+
+        <!-- Democrat-Lawful Morality Forms -->
         <form id="democrat-lawful-morality" style="display: none;">
-            <h3>A Lawful Democrat</h3>
+            <h3>A Steadfast Voice of the People</h3>
             <div class="question">
-                <p>7. When a plague strikes the polis, how do you distribute the limited healing herbs?</p>
+                <p>7. When a poor farmer begs for aid after a flood, what do you do?</p>
                 <div class="options">
-                    <label><input type="radio" name="q7" value="good"> Ensure the poorest citizens receive care first,
-                        as decreed by the assembly’s humanitarian laws.</label><br>
-                    <label><input type="radio" name="q7" value="neutral"> Prioritize the hoplites and their families, as
-                        their strength preserves the polis’ order.</label><br>
-                    <label><input type="radio" name="q7" value="evil"> Reserve the herbs for loyal supporters, punishing
-                        dissenters with neglect under legal pretense.</label>
+                    <label><input type="radio" name="q7" value="good"> Organize a public fund through the assembly to
+                        support him and others, fostering communal care.</label><br>
+                    <label><input type="radio" name="q7" value="neutral"> Suggest he petition the wealthier citizens
+                        privately, letting their generosity decide his fate.</label><br>
+                    <label><input type="radio" name="q7" value="evil"> Deny him aid, arguing that the polis’s laws favor
+                        the strong and self-reliant.</label>
                 </div>
             </div>
             <div class="question">
-                <p>8. How do you punish a citizen who defies the assembly’s vote?</p>
+                <p>8. How do you handle a captured enemy general after a battle?</p>
                 <div class="options">
-                    <label><input type="radio" name="q8" value="good"> Exile them with a chance for redemption,
-                        upholding justice with mercy per the laws.</label><br>
-                    <label><input type="radio" name="q8" value="neutral"> Fine them heavily to deter others, maintaining
-                        order without excess cruelty.</label><br>
-                    <label><input type="radio" name="q8" value="evil"> Enslave their household as a warning, twisting
-                        the law to crush opposition.</label>
+                    <label><input type="radio" name="q8" value="good"> Offer mercy and ransom him back, showing the
+                        polis’s honor to allies and foes alike.</label><br>
+                    <label><input type="radio" name="q8" value="neutral"> Hold a vote on his fate, balancing
+                        practicality with the assembly’s mood.</label><br>
+                    <label><input type="radio" name="q8" value="evil"> Execute him publicly to deter future threats,
+                        strengthening the polis through fear.</label>
                 </div>
             </div>
             <div class="question">
-                <p>9. What legacy do you seek as a leader of the demos?</p>
+                <p>9. When rebuilding the city walls, who benefits most?</p>
                 <div class="options">
-                    <label><input type="radio" name="q9" value="good"> A polis where all thrive under fair laws,
-                        remembered as a guardian of the people.</label><br>
-                    <label><input type="radio" name="q9" value="neutral"> A stable city that respects my name for
-                        upholding its legal traditions.</label><br>
-                    <label><input type="radio" name="q9" value="evil"> A fearful populace that obeys my edicts, their
-                        dread ensuring my eternal rule.</label>
+                    <label><input type="radio" name="q9" value="good"> Ensure the walls protect the outer farms and
+                        homes of the poorest citizens first.</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> Focus on efficiency, fortifying wherever labor
+                        and resources align best.</label><br>
+                    <label><input type="radio" name="q9" value="evil"> Prioritize the agora and elite districts,
+                        securing power where it matters most.</label>
                 </div>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Finish</button>
         </form>
-        <!-- Add 26 more morality forms for all combinations (omitted here for brevity but included in logic) -->
+        <form id="democrat-neutral-morality" style="display: none;">
+            <h3>A Pragmatic Champion of the Demos</h3>
+            <div class="question">
+                <p>7. When a plague strikes the polis, how do you distribute healers?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="good"> Send them to the slums first, where suffering is
+                        greatest, to ease the people’s pain.</label><br>
+                    <label><input type="radio" name="q7" value="neutral"> Assign them where they’re most needed day by
+                        day, adapting to the crisis.</label><br>
+                    <label><input type="radio" name="q7" value="evil"> Reserve them for the families who can pay or
+                        pledge loyalty, securing your influence.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. How do you treat a poet who mocks the assembly?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="good"> Defend his right to speak, believing satire
+                        strengthens the polis’s spirit.</label><br>
+                    <label><input type="radio" name="q8" value="neutral"> Ignore him unless the crowd demands action,
+                        keeping peace without commitment.</label><br>
+                    <label><input type="radio" name="q8" value="evil"> Banish him quietly, ensuring dissent doesn’t
+                        spread among the demos.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. When a trade deal with Corinth is proposed, what drives your vote?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="good"> Push for terms that feed the hungry, even if
+                        profits are slim.</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> Weigh the benefits to the polis against the
+                        risks, choosing what works now.</label><br>
+                    <label><input type="radio" name="q9" value="evil"> Favor a deal that enriches your allies,
+                        tightening your grip on power.</label>
+                </div>
+            </div>
+            <button type="submit">Finish</button>
+        </form>
+        <form id="democrat-chaotic-morality" style="display: none;">
+            <h3>A Wild Spirit of the People</h3>
+            <div class="question">
+                <p>7. When a rival polis raids your fields, how do you retaliate?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="good"> Lead a raid to reclaim stolen goods and free
+                        captives, sparing their innocents.</label><br>
+                    <label><input type="radio" name="q7" value="neutral"> Strike back as the mob demands, hitting
+                        wherever they’re weakest.</label><br>
+                    <label><input type="radio" name="q7" value="evil"> Burn their villages to ash, teaching a lesson
+                        none will forget.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. How do you respond to a slave uprising in the polis?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="good"> Free those who fought bravely, rewarding courage
+                        with citizenship.</label><br>
+                    <label><input type="radio" name="q8" value="neutral"> Crush the revolt but spare most, letting chaos
+                        sort the outcome.</label><br>
+                    <label><input type="radio" name="q8" value="evil"> Slaughter the leaders and sell the rest,
+                        profiting from their defiance.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. When a festival turns to rioting, what’s your role?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="good"> Rally the crowd to rebuild together, turning
+                        chaos into unity.</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> Join the fray, letting the strongest voices
+                        shape what follows.</label><br>
+                    <label><input type="radio" name="q9" value="evil"> Incite more destruction to weaken rivals,
+                        thriving in the disorder.</label>
+                </div>
+            </div>
+            <button type="submit">Finish</button>
+        </form>
+
+        <!-- Oligarch-Lawful Morality Forms -->
+        <form id="oligarch-lawful-morality" style="display: none;">
+            <h3>A Just Custodian of Tradition</h3>
+            <div class="question">
+                <p>7. When a drought starves the peasants, how do you act?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="good"> Open your granaries under strict rules, ensuring
+                        all survive the season.</label><br>
+                    <label><input type="radio" name="q7" value="neutral"> Distribute enough to quiet unrest, preserving
+                        your stores for the future.</label><br>
+                    <label><input type="radio" name="q7" value="evil"> Sell grain at high prices, culling the weak and
+                        enriching your house.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. How do you judge a thief caught stealing from your estate?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="good"> Sentence him to labor for the poor, upholding
+                        justice with mercy.</label><br>
+                    <label><input type="radio" name="q8" value="neutral"> Enforce the law with a fine or lashings, as
+                        tradition demands.</label><br>
+                    <label><input type="radio" name="q8" value="evil"> Cut off his hand, displaying the cost of crossing
+                        the elite.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. When a temple needs repair, how do you fund it?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="good"> Tax all nobles equally, honoring the gods and the
+                        polis together.</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> Donate publicly but expect favors from the
+                        priests in return.</label><br>
+                    <label><input type="radio" name="q9" value="evil"> Divert public funds to your coffers, leaving the
+                        temple to decay.</label>
+                </div>
+            </div>
+            <button type="submit">Finish</button>
+        </form>
+        <form id="oligarch-neutral-morality" style="display: none;">
+            <h3>A Shrewd Aristocrat</h3>
+            <div class="question">
+                <p>7. When a merchant offers a bribe for your vote, what do you do?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="good"> Refuse it, urging him to aid the polis openly
+                        instead.</label><br>
+                    <label><input type="radio" name="q7" value="neutral"> Take it if it benefits your family, ignoring
+                        petty morals.</label><br>
+                    <label><input type="radio" name="q7" value="evil"> Demand more, then betray him to a rival for
+                        greater gain.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. How do you handle a drought threatening your vineyards?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="good"> Share water with smaller farmers, building
+                        loyalty across the polis.</label><br>
+                    <label><input type="radio" name="q8" value="neutral"> Hoard it for your lands, letting others fend
+                        for themselves.</label><br>
+                    <label><input type="radio" name="q8" value="evil"> Divert the river entirely, dooming rivals to
+                        ruin.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. When a war looms, how do you arm the hoplites?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="good"> Equip all who can fight, strengthening the polis
+                        as a whole.</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> Arm your allies first, ensuring your faction’s
+                        survival.</label><br>
+                    <label><input type="radio" name="q9" value="evil"> Sell arms to both sides, profiting as the city
+                        bleeds.</label>
+                </div>
+            </div>
+            <button type="submit">Finish</button>
+        </form>
+        <form id="oligarch-chaotic-morality" style="display: none;">
+            <h3>A Ruthless Lord of Power</h3>
+            <div class="question">
+                <p>7. When a rival noble dies, how do you seize his lands?</p>
+                <div class="options">
+                    <label><input type="radio" name="q7" value="good"> Claim them only to protect his kin, offering them
+                        shelter.</label><br>
+                    <label><input type="radio" name="q7" value="neutral"> Take them swiftly, letting strength decide the
+                        outcome.</label><br>
+                    <label><input type="radio" name="q7" value="evil"> Poison his heirs, ensuring no one contests your
+                        gain.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. How do you react to a peasant revolt?</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="good"> Negotiate peace, granting small rights to calm
+                        the storm.</label><br>
+                    <label><input type="radio" name="q8" value="neutral"> Crush it with hired thugs, restoring order
+                        your way.</label><br>
+                    <label><input type="radio" name="q8" value="evil"> Enslave the survivors, turning rebellion into
+                        profit.</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. When a pirate offers alliance, what’s your move?</p>
+                <div class="options">
+                    <label><input type="radio" name="q9" value="good"> Refuse and hunt them down, protecting the polis’s
+                        trade.</label><br>
+                    <label><input type="radio" name="q9" value="neutral"> Accept if it weakens your foes, playing both
+                        sides.</label><br>
+                    <label><input type="radio" name="q9" value="evil"> Join them to raid weaker cities, growing rich on
+                        chaos.</label>
+                </div>
+            </div>
+            <button type="submit">Finish</button>
+        </form>
+
+        <!-- Tyrant Morality Forms and Results Placeholder -->
+        <!-- To be added in Part 2 -->
         <div id="results" style="display: none;"></div>
     </main>
     <footer>
         <p>© 2023 Personality Tests. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
+    <!-- Tyrant-Lawful Morality Form -->
+    <form id="tyrant-lawful-morality" style="display: none;">
+        <h3>A Tyrant Bound by Order</h3>
+        <div class="question">
+            <p>7. When a famine strikes, how do you ration the grain?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="good"> Distribute it fairly to all, ensuring even the
+                    poorest survive under your watchful eye.</label><br>
+                <label><input type="radio" name="q7" value="neutral"> Prioritize your loyalists and soldiers,
+                    maintaining order through strength.</label><br>
+                <label><input type="radio" name="q7" value="evil"> Hoard it for yourself and the elite, letting the
+                    masses starve to cull dissent.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. How do you handle a prophecy warning of your downfall?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="good"> Consult the oracle and adjust your rule to avoid
+                    calamity, protecting the polis.</label><br>
+                <label><input type="radio" name="q8" value="neutral"> Ignore it, focusing on immediate threats and
+                    maintaining your grip.</label><br>
+                <label><input type="radio" name="q8" value="evil"> Slaughter the priests who delivered it, silencing the
+                    gods themselves.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. When a rival tyrant offers peace, what’s your response?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="good"> Accept and forge a treaty, securing prosperity for
+                    both poleis.</label><br>
+                <label><input type="radio" name="q9" value="neutral"> Feign agreement, then strike when their guard is
+                    down.</label><br>
+                <label><input type="radio" name="q9" value="evil"> Poison their envoy and launch a surprise attack,
+                    seizing their lands.</label>
+            </div>
+        </div>
+        <button type="submit">Finish</button>
+    </form>
+
+    <!-- Tyrant-Neutral Morality Form -->
+    <form id="tyrant-neutral-morality" style="display: none;">
+        <h3>A Calculating Autocrat</h3>
+        <div class="question">
+            <p>7. When a plague ravages the polis, how do you act?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="good"> Open your coffers to fund healers, saving as many as
+                    possible.</label><br>
+                <label><input type="radio" name="q7" value="neutral"> Quarantine the sick and wait, preserving your rule
+                    above all.</label><br>
+                <label><input type="radio" name="q7" value="evil"> Exile the infected, purging weakness from your
+                    domain.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. How do you deal with a rebellious general?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="good"> Offer him a governorship, turning a foe into an ally
+                    through mercy.</label><br>
+                <label><input type="radio" name="q8" value="neutral"> Bribe his lieutenants to betray him, dividing his
+                    forces.</label><br>
+                <label><input type="radio" name="q8" value="evil"> Assassinate him and display his head, cowing others
+                    into obedience.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. When a neighboring polis falls, what do you do?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="good"> Send aid and annex it peacefully, growing your
+                    influence.</label><br>
+                <label><input type="radio" name="q9" value="neutral"> Seize its resources, bolstering your own polis’s
+                    strength.</label><br>
+                <label><input type="radio" name="q9" value="evil"> Enslave its people, turning conquest into
+                    profit.</label>
+            </div>
+        </div>
+        <button type="submit">Finish</button>
+    </form>
+
+    <!-- Tyrant-Chaotic Morality Form -->
+    <form id="tyrant-chaotic-morality" style="display: none;">
+        <h3>A Tempest of Power</h3>
+        <div class="question">
+            <p>7. When a riot breaks out in the agora, how do you respond?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="good"> Join the crowd to hear their grievances, promising
+                    change.</label><br>
+                <label><input type="radio" name="q7" value="neutral"> Let it burn out, intervening only if it threatens
+                    your palace.</label><br>
+                <label><input type="radio" name="q7" value="evil"> Send in troops to slaughter the rabble, restoring
+                    fear.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. How do you treat a captured enemy leader?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="good"> Offer him exile with dignity, showing strength in
+                    mercy.</label><br>
+                <label><input type="radio" name="q8" value="neutral"> Imprison him until he’s useful, then ransom or
+                    execute.</label><br>
+                <label><input type="radio" name="q8" value="evil"> Torture him for sport, broadcasting his screams to
+                    your foes.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. When an oracle predicts your death, what’s your move?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="good"> Defy fate by building a legacy of justice, outliving
+                    prophecy.</label><br>
+                <label><input type="radio" name="q9" value="neutral"> Ignore it and live as you please, unbound by
+                    divine whims.</label><br>
+                <label><input type="radio" name="q9" value="evil"> Sacrifice a hundred innocents to appease the gods,
+                    buying time.</label>
+            </div>
+        </div>
+        <button type="submit">Finish</button>
+    </form>
+
+    <!-- Tyrant-Lawful Morality Form -->
+    <form id="tyrant-lawful-morality" style="display: none;">
+        <h3>A Tyrant Bound by Order</h3>
+        <div class="question">
+            <p>7. When a famine strikes, how do you ration the grain?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="good"> Distribute it fairly to all, ensuring even the
+                    poorest survive under your watchful eye.</label><br>
+                <label><input type="radio" name="q7" value="neutral"> Prioritize your loyalists and soldiers,
+                    maintaining order through strength.</label><br>
+                <label><input type="radio" name="q7" value="evil"> Hoard it for yourself and the elite, letting the
+                    masses starve to cull dissent.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. How do you handle a prophecy warning of your downfall?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="good"> Consult the oracle and adjust your rule to avoid
+                    calamity, protecting the polis.</label><br>
+                <label><input type="radio" name="q8" value="neutral"> Ignore it, focusing on immediate threats and
+                    maintaining your grip.</label><br>
+                <label><input type="radio" name="q8" value="evil"> Slaughter the priests who delivered it, silencing the
+                    gods themselves.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. When a rival tyrant offers peace, what’s your response?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="good"> Accept and forge a treaty, securing prosperity for
+                    both poleis.</label><br>
+                <label><input type="radio" name="q9" value="neutral"> Feign agreement, then strike when their guard is
+                    down.</label><br>
+                <label><input type="radio" name="q9" value="evil"> Poison their envoy and launch a surprise attack,
+                    seizing their lands.</label>
+            </div>
+        </div>
+        <button type="submit">Finish</button>
+    </form>
+
+    <!-- Tyrant-Neutral Morality Form -->
+    <form id="tyrant-neutral-morality" style="display: none;">
+        <h3>A Calculating Autocrat</h3>
+        <div class="question">
+            <p>7. When a plague ravages the polis, how do you act?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="good"> Open your coffers to fund healers, saving as many as
+                    possible.</label><br>
+                <label><input type="radio" name="q7" value="neutral"> Quarantine the sick and wait, preserving your rule
+                    above all.</label><br>
+                <label><input type="radio" name="q7" value="evil"> Exile the infected, purging weakness from your
+                    domain.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. How do you deal with a rebellious general?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="good"> Offer him a governorship, turning a foe into an ally
+                    through mercy.</label><br>
+                <label><input type="radio" name="q8" value="neutral"> Bribe his lieutenants to betray him, dividing his
+                    forces.</label><br>
+                <label><input type="radio" name="q8" value="evil"> Assassinate him and display his head, cowing others
+                    into obedience.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. When a neighboring polis falls, what do you do?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="good"> Send aid and annex it peacefully, growing your
+                    influence.</label><br>
+                <label><input type="radio" name="q9" value="neutral"> Seize its resources, bolstering your own polis’s
+                    strength.</label><br>
+                <label><input type="radio" name="q9" value="evil"> Enslave its people, turning conquest into
+                    profit.</label>
+            </div>
+        </div>
+        <button type="submit">Finish</button>
+    </form>
+
+    <!-- Tyrant-Chaotic Morality Form -->
+    <form id="tyrant-chaotic-morality" style="display: none;">
+        <h3>A Tempest of Power</h3>
+        <div class="question">
+            <p>7. When a riot breaks out in the agora, how do you respond?</p>
+            <div class="options">
+                <label><input type="radio" name="q7" value="good"> Join the crowd to hear their grievances, promising
+                    change.</label><br>
+                <label><input type="radio" name="q7" value="neutral"> Let it burn out, intervening only if it threatens
+                    your palace.</label><br>
+                <label><input type="radio" name="q7" value="evil"> Send in troops to slaughter the rabble, restoring
+                    fear.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. How do you treat a captured enemy leader?</p>
+            <div class="options">
+                <label><input type="radio" name="q8" value="good"> Offer him exile with dignity, showing strength in
+                    mercy.</label><br>
+                <label><input type="radio" name="q8" value="neutral"> Imprison him until he’s useful, then ransom or
+                    execute.</label><br>
+                <label><input type="radio" name="q8" value="evil"> Torture him for sport, broadcasting his screams to
+                    your foes.</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. When an oracle predicts your death, what’s your move?</p>
+            <div class="options">
+                <label><input type="radio" name="q9" value="good"> Defy fate by building a legacy of justice, outliving
+                    prophecy.</label><br>
+                <label><input type="radio" name="q9" value="neutral"> Ignore it and live as you please, unbound by
+                    divine whims.</label><br>
+                <label><input type="radio" name="q9" value="evil"> Sacrifice a hundred innocents to appease the gods,
+                    buying time.</label>
+            </div>
+        </div>
+        <button type="submit">Finish</button>
+    </form>
+
 </body>
 
 </html>
