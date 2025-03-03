@@ -4,10 +4,8 @@ Personality Tests
 This is a simple personality test website designed to explore your leadership style in the context of a 6th-century BC Greek polis. Answer a series of questions to discover whether you’d be a benevolent democrat, a cunning oligarch, or a ruthless tyrant. The site uses HTML, CSS, and vanilla JavaScript, hosted on GitHub Pages.
 
 ## How to Use
-1. Visit the live site at `https://emmerkar.github.io/My-First-Website/index.html`.
+1. Visit the live site at `https://emmerkar.github.io/Who-Are-You-Really/`.
 2. Start with the homepage (`index.html`) and click "Take the Test" to begin.
-3. Answer the three sets of questions to determine your political category, lawfulness, and morality.
-4. See your unique result, complete with a title and description.
 
 ## Files
 - `index.html`: The homepage.
